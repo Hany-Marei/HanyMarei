@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script>document.documentElement.dataset.theme=localStorage.getItem("alfaTheme")||"light";</script>
+  <meta content="ALFA TCL for Lighting - Product catalogue." name="description"/>
+  <meta content="الفا TCL للإضاءة, شركة الفا للإضاءة, ALFA TCL, ALFA TCL for Lighting, إضاءة LED, حلول الإضاءة, تصميم الإضاءة, حلول إضاءة احترافية, إضاءة داخلية, إضاءة خارجية, إضاءة معمارية, إضاءة تجارية, إضاءة صناعية, إضاءة شوارع, إضاءة حدائق, إضاءة واجهات, أنظمة التحكم في الإضاءة, DIALux, القاهرة, مصر, ALFA TCL for Lighting, ALFA TCL, Alfa Lighting Egypt, lighting company Egypt, LED lighting, professional lighting solutions, architectural lighting, commercial lighting, industrial lighting, indoor lighting, outdoor lighting, street lighting, landscape lighting, facade lighting, lighting design, lighting control, DIALux, Cairo, Egypt" name="keywords"/>
+  <title>
+   ALFA TCL | Products
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="logo.png" rel="icon" type="image/svg+xml"/>
+  <link href="logo.png" rel="icon" sizes="64x64" type="image/png"/>
+  <link href="logo.png" rel="apple-touch-icon"/>
+  <link href="style.css" rel="stylesheet"/>
+ 
+<style>
+.product-image{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.product-image .product-photo{width:100%;height:100%;object-fit:contain;display:block;padding:22px;position:relative;
+z-index:2;transition:transform .35s ease,filter .35s ease;}
+.catalog-card:hover .product-image .product-photo{transform:scale(1.06);}
+.product-image.has-photo .lamp-shape{display:none;}
+</style>
+</head>
+ <body>
+  <div class="bg-orb orb-1">
+  </div>
+  <div class="bg-orb orb-2">
+  </div>
+  <header class="site-header">
+   <nav class="navbar glass">
+    <a class="brand-logo" href="index.html#home">
+     <img alt="ALFA TCL for Lighting" src="logo.png"/>
+    </a>
+    <button aria-label="Open menu" class="menu-toggle">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+    <div class="nav-links">
+     <a class="nav-link" data-i18n="navHome" href="index.html#home">
+      Home
+     </a>
+     <a class="nav-link active" data-i18n="navProducts" href="products.html">
+      Products
+     </a>
+     <a class="nav-link" data-i18n="navServices" href="index.html#services">
+      Services
+     </a>
+     <a class="nav-link" data-i18n="navProjects" href="index.html#projects">
+      Projects
+     </a>
+     <a class="nav-link" data-i18n="navPartners" href="index.html#partners">
+      Partners
+     </a>
+     <a class="nav-link nav-contact" data-i18n="navContact" href="index.html#contact">
+      Contact Us
+     </a>
+    </div>
+    <button aria-label="تغيير المظهر" class="theme-switch" id="themeSwitch" title="تغيير المظهر">
+     <span class="theme-icon" aria-hidden="true">☾</span>
+    </button>
+    <button class="lang-switch" id="langSwitch">
+     عربي
+    </button>
+   </nav>
+  </header>
+  <main>
+   <section class="products-hero section">
+    <div class="reveal">
+     <span class="eyebrow" data-i18n="catalogEyebrow">
+      ALFA TCL CATALOGUE
+     </span>
+     <h1 data-i18n="catalogTitle">
+      Our
+      <span>
+       Products.
+      </span>
+     </h1>
+     <p data-i18n="catalogText">
+      Explore our lighting collection and download the Material List for any product.
+     </p>
+    </div>
+   </section>
+   <section class="section products-page-section">
+    <div class="catalog-toolbar reveal">
+     <div>
+      <span class="catalog-count">
+       <span id="productCount">
+        50
+       </span>
+       <span data-i18n="productAvailable">
+        products available
+       </span>
+      </span>
+     </div>
+     <div class="search-box product-search-focus">
+      <input data-placeholder="search" id="productSearch" placeholder="Search products..." type="search"/>
+      <span>
+       ⌕
+      </span>
+     </div>
+    </div>
+    <div class="products-catalog" id="productsCatalog">
+    </div>
+   </section>
+   <section class="partners section">
+    <div class="partners-title reveal">
+     <span class="eyebrow" data-i18n="partnersEyebrow">
+      شركاؤنا
+     </span>
+     <h2 data-i18n="partnersTitle">
+      شركاء بنعتمد عليهم
+      <br/>
+      <span>
+       في مشاريعنا.
+      </span>
+     </h2>
+    </div>
+    <div class="partner-marquee reveal">
+     <div class="partner-track">
+      <div class="partner-logo">
+       CREE
+      </div>
+      <div class="partner-logo">
+       TRIDONIC
+      </div>
+      <div class="partner-logo">
+       PHILIPS
+      </div>
+      <div class="partner-logo">
+       MEAN WELL
+      </div>
+      <div class="partner-logo">
+       LEDIL
+      </div>
+      <div class="partner-logo">
+       BJB
+      </div>
+      <div class="partner-logo">
+       OSRAM
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section contact-section">
+    <div class="contact-box glass reveal">
+     <div class="contact-copy">
+      <span class="eyebrow" data-i18n="contactEyebrow">
+       CONTACT US
+      </span>
+      <h2 data-i18n="catalogContactTitle">
+       Need a
+       <br/>
+       <span>
+        lighting solution?
+       </span>
+      </h2>
+      <p data-i18n="catalogContactText">
+       Contact our team for product selection, technical support and project requirements.
+      </p>
+      <div class="contact-details">
+       <a href="mailto:marketing@alfagroup-egy.com">
+        marketing@alfagroup-egy.com
+       </a>
+       <a href="tel:+201098936836">
+        +201098936836
+       </a>
+       <span data-i18n="cairo">
+        Cairo, Egypt
+       </span>
+      </div>
+     </div>
+     <div class="catalog-contact-action">
+      <a class="btn btn-primary" href="index.html#contact">
+       <span data-i18n="contactTeam">
+        Contact Our Team
+       </span>
+       ↗
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="footer-main">
+    <a class="brand-logo footer-brand-logo" href="index.html">
+     <img alt="ALFA TCL for Lighting" src="logo.png"/>
+     <span class="footer-brand-text"><strong>Alfa</strong><small>TCL for Lighting</small></span>
+    </a>
+    <p data-i18n="footerText">
+     Professional lighting solutions for modern spaces.
+    </p>
+    <div class="footer-links">
+     <a data-i18n="navServices" href="index.html#services">
+      Services
+     </a>
+     <a data-i18n="navProjects" href="index.html#projects">
+      Projects
+     </a>
+     <a data-i18n="navContact" href="index.html#contact">
+      Contact
+     </a>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <span>
+     © 2026 ALFA TCL for Lighting. All rights reserved.
+    </span>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+<script>
+(function(){
+  const catalog=document.getElementById('productsCatalog');
+  if(!catalog)return;
+  const extensions=['png','jpg','jpeg','webp','svg'];
+  function attachProductImages(){
+    catalog.querySelectorAll('.catalog-card').forEach(function(card){
+      if(card.dataset.imageBound==='true')return;
+      const codeEl=card.querySelector('.catalog-code');
+      const box=card.querySelector('.product-image');
+      if(!codeEl||!box)return;
+      const code=codeEl.textContent.trim();
+      if(!/^ALFA-\d{3}$/.test(code))return;
+      card.dataset.imageBound='true';
+      const img=document.createElement('img');
+      img.className='product-photo';
+      img.alt=code+' product';
+      img.loading='lazy';
+      img.decoding='async';
+      const paths=[];
+      extensions.forEach(function(ext){paths.push('images/products/'+code+'.'+ext);});
+      extensions.forEach(function(ext){paths.push('images/'+code+'.'+ext);});
+      let index=0;
+      function tryNext(){
+        if(index>=paths.length){img.remove();return;}
+        img.src=paths[index++];
+      }
+      img.addEventListener('load',function(){box.classList.add('has-photo');});
+      img.addEventListener('error',tryNext);
+      box.appendChild(img);
+      tryNext();
+    });
+  }
+  attachProductImages();
+  new MutationObserver(attachProductImages).observe(catalog,{childList:true,subtree:true});
+})();
+</script>
+</body>
+</html>

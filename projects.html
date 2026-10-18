@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script>document.documentElement.dataset.theme=localStorage.getItem("alfaTheme")||"light";</script>
+  <meta content="ALFA TCL for Lighting - Projects Gallery." name="description"/>
+  <meta content="الفا TCL للإضاءة, شركة الفا للإضاءة, ALFA TCL, ALFA TCL for Lighting, إضاءة LED, حلول الإضاءة, تصميم الإضاءة, حلول إضاءة احترافية, إضاءة داخلية, إضاءة خارجية, إضاءة معمارية, إضاءة تجارية, إضاءة صناعية, إضاءة شوارع, إضاءة حدائق, إضاءة واجهات, أنظمة التحكم في الإضاءة, DIALux, القاهرة, مصر, ALFA TCL for Lighting, ALFA TCL, Alfa Lighting Egypt, lighting company Egypt, LED lighting, professional lighting solutions, architectural lighting, commercial lighting, industrial lighting, indoor lighting, outdoor lighting, street lighting, landscape lighting, facade lighting, lighting design, lighting control, DIALux, Cairo, Egypt" name="keywords"/>
+  <title>
+   ALFA TCL | Projects
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="logo.png" rel="icon" type="image/jpg+xml"/>
+  <link href="logo.png" rel="icon" sizes="64x64" type="image/png"/>
+  <link href="logo.png" rel="apple-touch-icon"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="bg-orb orb-1">
+  </div>
+  <div class="bg-orb orb-2">
+  </div>
+  <header class="site-header">
+   <nav class="navbar glass">
+    <a class="brand-logo" href="index.html#home">
+     <img alt="ALFA TCL for Lighting" src="logo.png"/>
+    </a>
+    <button aria-label="Open menu" class="menu-toggle">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+    <div class="nav-links">
+     <a class="nav-link" data-i18n="navHome" href="index.html#home">
+      الرئيسية
+     </a>
+     <a class="nav-link" data-i18n="navProducts" href="index.html#products-preview">
+      المنتجات
+     </a>
+     <a class="nav-link" data-i18n="navServices" href="index.html#services">
+      الخدمات
+     </a>
+     <a class="nav-link active" data-i18n="navProjects" href="index.html#projects">
+      المشروعات
+     </a>
+     <a class="nav-link" data-i18n="navPartners" href="index.html#partners">
+      شركاؤنا
+     </a>
+     <a class="nav-link nav-contact" data-i18n="navContact" href="index.html#contact">
+      اتصل بينا
+     </a>
+    </div>
+    <button aria-label="تغيير المظهر" class="theme-switch" id="themeSwitch" title="تغيير المظهر">
+     <span class="theme-icon" aria-hidden="true">☾</span>
+    </button>
+    <button class="lang-switch" id="langSwitch">
+     English
+    </button>
+   </nav>
+  </header>
+  <main class="projects-page">
+   <section class="projects-page-hero section">
+    <div class="reveal">
+     <span class="eyebrow" data-i18n="projectsEyebrow">
+      مشروعات من شغلنا
+     </span>
+     <h1 data-i18n="projectsPageTitle">
+      كل مشروعاتنا
+      <br/>
+      <span>
+       في مكان واحد.
+      </span>
+     </h1>
+     <p data-i18n="projectsPageText">
+      معرض مشروعات كبير تقدر تتصفحه حسب القطاع، وتفتح أي صورة بحجمها الكامل. التصميم جاهز لاستيعاب عشرات أو مئات الصور.
+     </p>
+    </div>
+   </section>
+   <section class="section projects-gallery-page-section">
+    <div class="projects-gallery-top glass reveal">
+     <div class="projects-gallery-copy">
+      <span class="eyebrow" data-i18n="galleryEyebrow">
+       PROJECT GALLERY
+      </span>
+      <h2 data-i18n="galleryTitle">
+       معرض مشروعاتنا.
+      </h2>
+      <p data-i18n="galleryText">
+       اختار القطاع أو دور بالاسم، واستعرض الصور في شبكة مرنة تقدر تكبر لأكثر من 100 صورة بسهولة.
+      </p>
+     </div>
+     <div class="projects-gallery-count">
+      <strong id="galleryCount">
+       12
+      </strong>
+      <span data-i18n="galleryCountText">
+       صورة
+      </span>
+     </div>
+    </div>
+    <div class="projects-gallery-toolbar glass reveal">
+     <div aria-label="Project categories" class="project-filter-tabs" role="tablist">
+      <button class="project-filter active" data-filter="all" data-i18n="galleryAll">
+       الكل
+      </button>
+      <button class="project-filter" data-filter="clubs">
+       CLUBS
+      </button>
+      <button class="project-filter" data-filter="real-estate">
+       Real Estate
+      </button>
+      <button class="project-filter" data-filter="education">
+       Education
+      </button>
+      <button class="project-filter" data-filter="health">
+       Ministry of Health
+      </button>
+     </div>
+    </div>
+    <div aria-live="polite" class="projects-masonry" id="projectsMasonry">
+    </div>
+    <button class="load-more-projects" data-i18n="loadMoreProjects" id="loadMoreProjects">
+     عرض المزيد
+    </button>
+    <p class="projects-empty" data-i18n="galleryNoResults" id="projectsEmpty">
+     ملقيناش صور بالمواصفات دي.
+    </p>
+   </section>
+  </main>
+  <div aria-hidden="true" class="project-lightbox" id="projectLightbox">
+   <button aria-label="Close" class="lightbox-close" id="lightboxClose">
+    ×
+   </button>
+   <button aria-label="Previous" class="lightbox-prev" id="lightboxPrev">
+    ‹
+   </button>
+   <figure class="lightbox-figure">
+    <img alt="" id="lightboxImage" src=""/>
+    <figcaption>
+     <span id="lightboxCategory">
+     </span>
+     <strong id="lightboxTitle">
+     </strong>
+    </figcaption>
+   </figure>
+   <button aria-label="Next" class="lightbox-next" id="lightboxNext">
+    ›
+   </button>
+  </div>
+  <footer>
+   <div class="footer-main">
+    <a class="brand-logo footer-brand-logo" href="index.html">
+     <img alt="ALFA TCL for Lighting" src="logo.png"/>
+     <span class="footer-brand-text"><strong>Alfa</strong><small>TCL for Lighting</small></span>
+    </a>
+    <p data-i18n="footerText">
+     حلول إضاءة عملية وعصرية للمشروعات المختلفة.
+    </p>
+    <div class="footer-links">
+     <a data-i18n="navProducts" href="products.html">
+      المنتجات
+     </a>
+     <a data-i18n="navServices" href="index.html#services">
+      الخدمات
+     </a>
+     <a data-i18n="navProjects" href="index.html#projects">
+      المشروعات
+     </a>
+     <a data-i18n="navContact" href="index.html#contact">
+      اتصل بينا
+     </a>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <span>
+     © 2026 ALFA TCL for Lighting. All rights reserved.
+    </span>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+  <script>
+   const projectsGallery=[
+ {
+  category:'clubs',
+ categoryAr:'CLUBS',
+ categoryEn:'CLUBS',
+ titleAr:'مشروع CLUBS 01',
+ titleEn:'CLUBS Project 01',
+ image:'clubs-1.jpg'
+ },
+
+ {
+  category:'clubs',
+ categoryAr:'CLUBS',
+ categoryEn:'CLUBS',
+ titleAr:'مشروع CLUBS 02',
+ titleEn:'CLUBS Project 02',
+ image:'clubs-2.jpg'
+ },
+
+ {
+  category:'clubs',
+ categoryAr:'CLUBS',
+ categoryEn:'CLUBS',
+ titleAr:'مشروع CLUBS 03',
+ titleEn:'CLUBS Project 03',
+ image:'clubs-3.jpg'
+ },
+
+ {
+ category:'real-estate',
+ categoryAr:'Real Estate',
+ categoryEn:'Real Estate',
+ titleAr:'مشروع Real Estate 01',
+ titleEn:'Real Estate Project 01',
+ image:'real-estate-1.jpg'
+ },
+
+ {
+  category:'real-estate',
+  categoryAr:'Real Estate',
+  categoryEn:'Real Estate',
+  titleAr:'مشروع Real Estate 02',
+  titleEn:'Real Estate Project 02',
+  image:'real-estate-2.jpg'
+},
+
+ {
+  category:'real-estate',
+  categoryAr:'Real Estate',
+  categoryEn:'Real Estate',
+  titleAr:'مشروع Real Estate 03',
+  titleEn:'Real Estate Project 03',
+  image:'real-estate-3.jpg'
+},
+
+ {
+  category:'education',
+  categoryAr:'Education',
+  categoryEn:'Education',
+  titleAr:'مشروع Education 01',
+  titleEn:'Education Project 01',
+  image:'education-1.jpg'
+},
+ {
+  category:'education',
+  categoryAr:'Education',
+  categoryEn:'Education',
+  titleAr:'مشروع Education 02',
+  titleEn:'Education Project 02',
+  image:'education-2.jpg'
+},
+ {
+  category:'education',
+  categoryAr:'Education',
+  categoryEn:'Education',
+  titleAr:'مشروع Education 03',
+  titleEn:'Education Project 03',
+  image:'education-3.jpg'
+},
+ {
+  category:'health',
+  categoryAr:'Ministry of Health',
+  categoryEn:'Ministry of Health',
+  titleAr:'مشروع Ministry of Health 01',
+  titleEn:'Ministry of Health Project 01',
+  image:'health-1.jpg'
+},
+ {
+  category:'health',
+  categoryAr:'Ministry of Health',
+  categoryEn:'Ministry of Health',
+  titleAr:'مشروع Ministry of Health 02',
+  titleEn:'Ministry of Health Project 02',
+  image:'health-2.jpg'
+},
+ {
+  category:'health',
+  categoryAr:'Ministry of Health',
+  categoryEn:'Ministry of Health',
+  titleAr:'مشروع Ministry of Health 03',
+  titleEn:'Ministry of Health Project 03',
+  image:'health-3.jpg'
+}
+];
+let galleryFilter='all',galleryQuery='',galleryShown=24,lightboxIndex=0,filteredGallery=[];
+const getLang=()=>localStorage.getItem('alfaLang')||'ar';
+function galleryRender(){
+ const q=galleryQuery.toLowerCase().trim();
+ filteredGallery=projectsGallery.filter(p=>(galleryFilter==='all'||p.category===galleryFilter)&&(!q||`${p.categoryAr} ${p.categoryEn} ${p.titleAr} ${p.titleEn}`.toLowerCase().includes(q)));
+ const visible=filteredGallery.slice(0,galleryShown),wrap=document.getElementById('projectsMasonry');
+ wrap.innerHTML=visible.map((p,i)=>`<button class="project-tile" data-index="${i}" aria-label="${getLang()==='ar'?p.titleAr:p.titleEn}"><img loading="lazy" src="images/projects/${p.image}" alt="${getLang()==='ar'?p.titleAr:p.titleEn}"><span class="tile-shade"></span><span class="tile-meta"><small>${getLang()==='ar'?p.categoryAr:p.categoryEn}</small><strong>${getLang()==='ar'?p.titleAr:p.titleEn}</strong></span></button>`).join('');
+ document.getElementById('galleryCount').textContent=filteredGallery.length;
+ document.getElementById('projectsEmpty').style.display=filteredGallery.length?'none':'block';
+ const more=document.getElementById('loadMoreProjects'); more.style.display=galleryShown<filteredGallery.length?'inline-flex':'none';
+ wrap.querySelectorAll('.project-tile').forEach(btn=>btn.addEventListener('click',()=>openLightbox(Number(btn.dataset.index))));
+}
+function openLightbox(i){lightboxIndex=i;const p=filteredGallery[i];if(!p)return;const ar=getLang()==='ar';document.getElementById('lightboxImage').src='images/projects/'+p.image;document.getElementById('lightboxImage').alt=ar?p.titleAr:p.titleEn;document.getElementById('lightboxCategory').textContent=ar?p.categoryAr:p.categoryEn;document.getElementById('lightboxTitle').textContent=ar?p.titleAr:p.titleEn;const lb=document.getElementById('projectLightbox');lb.classList.add('open');lb.setAttribute('aria-hidden','false');document.body.classList.add('lightbox-open');}
+function closeLightbox(){const lb=document.getElementById('projectLightbox');lb.classList.remove('open');lb.setAttribute('aria-hidden','true');document.body.classList.remove('lightbox-open');}
+function moveLightbox(step){if(!filteredGallery.length)return;lightboxIndex=(lightboxIndex+step+filteredGallery.length)%filteredGallery.length;openLightbox(lightboxIndex);}
+document.querySelectorAll('.project-filter').forEach(b=>b.addEventListener('click',()=>{galleryFilter=b.dataset.filter;galleryShown=24;document.querySelectorAll('.project-filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');galleryRender()}));
+
+document.getElementById('loadMoreProjects').addEventListener('click',()=>{galleryShown+=24;galleryRender()});
+document.getElementById('lightboxClose').addEventListener('click',closeLightbox);document.getElementById('lightboxPrev').addEventListener('click',()=>moveLightbox(-1));document.getElementById('lightboxNext').addEventListener('click',()=>moveLightbox(1));document.getElementById('projectLightbox').addEventListener('click',e=>{if(e.target.id==='projectLightbox')closeLightbox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')moveLightbox(1);if(e.key==='ArrowRight')moveLightbox(-1)});
+window.addEventListener('storage',galleryRender);galleryRender();
+  </script>
+ </body>
+</html>
